@@ -3,7 +3,6 @@
     "name": "Cleanup RFD Referrals",
     "version": "1.0",
     "description": "Replaces RedFlagDeals referral links from forum posts to their non-referral counterpart",
-    "default_locale": "en",
     "author": "Alex Mi",
     "action": {
         "default_icon": {
