@@ -7,7 +7,9 @@ This extension parses all "auto linker" URLs on the forums and tries to replaces
 
 # TODO: 
 - [ ] Add menu to disable converting
+- [ ] Support links on main page of RFD
 
 # Thanks
 - https://github.com/googlefonts/noto-emoji
 - Stackoverflow
+- rsvg-covert
