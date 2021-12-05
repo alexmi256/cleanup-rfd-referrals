@@ -1,0 +1,28 @@
+{
+    "name": "Cleanup RFD Referrals",
+    "description": "Replaces RedFlagDeals referral links from forum posts to their non-referral counterpart",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["scripting", "tabs", "storage"],
+    "host_permissions": [
+        "https://forums.redflagdeals.com/",
+        "https://www.redflagdeals.com/"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "/images/emoji_u1f9f9_16.png",
+            "32": "/images/emoji_u1f9f9_32.png",
+            "48": "/images/emoji_u1f9f9_48.png",
+            "128": "/images/emoji_u1f9f9_128.png"
+        }
+    },
+    "icons": {
+        "16": "/images/emoji_u1f9f9_16.png",
+        "32": "/images/emoji_u1f9f9_32.png",
+        "48": "/images/emoji_u1f9f9_48.png",
+        "128": "/images/emoji_u1f9f9_128.png"
+    }
+}
