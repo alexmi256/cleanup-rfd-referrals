@@ -34,7 +34,8 @@ function replaceAllLinks() {
         const href = node.getAttribute('href');
         hrefDecoded = decodeReferralURL(href);
         if (hrefDecoded) {
-            node.setAttribute('href', hrefDecoded)
+            node.setAttribute('href', hrefDecoded);
+            node.setAttribute('title', 'Scrubbed Refferal Link');
         }
     })
 }
