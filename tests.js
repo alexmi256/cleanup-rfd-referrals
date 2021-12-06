@@ -13,6 +13,7 @@ const EXAMPLES = {
     bestbuy: 'https://bestbuyca.o93x.net/c/341376/644465/10221?u=https://www.bestbuy.ca/en-ca/event/xbox-all-access-series-x-pricing-and-details-information/blt35d6719f8454a13b?icmp=xbox_all_access_story_series_x_pricing_details',
     staples: 'https://staplescanada.4u8mqw.net/c/341376/755401/10903?u=https://www.staples.ca/products/3012653-en-hp-deskjet-3752-all-in-one-printer',
     dell: 'http://www.anrdoezrs.net/click-749547-12105225?url=https%3A%2F%2Fwww.dell.com%2Fen-ca%2Fshop%2Fdell-34-curved-gaming-monitor-s3422dwg%2Fapd%2F210-azep%2Fmonitors-monitor-accessories&sid=rfdcb',
+    dell2: 'http://www.kqzyfj.com/click-749547-12105225?url=https%3A%2F%2Fdeals.dell.com%2Fen-ca%2Fproductdetail%2Fbyn1&sid=rfdcb',
     samsung: 'https://www.awin1.com/cread.php?awinmid=18530&awinaffid=139736&clickref=&p=https://shop.samsung.com/ca/multistore/caepp/education/Products/Tablets/Galaxy-Tab-S7%2B-Wi-Fi/p/SM-T970NZNAXAC',
     aliexpress: 'http://www.awin1.com/cread.php?awinmid=6378&awinaffid=139736&clickref=&p=https://www.aliexpress.com/item/33030968874.html?spm=a2g0o.store_pc_groupList.8148356.1.16212130HX36Q7'
 }

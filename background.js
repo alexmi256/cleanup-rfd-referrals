@@ -1,3 +1,7 @@
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.storage.sync.set({ state: true });
+});
+
 function replaceAllLinks() {
     const decodeReferralURL = function (url) {
         const PREFFERED_QUERY_PARAMS = ['location', 'url', 'murl', 'u', 'p'];
@@ -16,7 +20,7 @@ function replaceAllLinks() {
         }
     
         if (newURL) {
-            // TODO: Extra processing steps should go here
+            // Extra URL processing steps should go here if needed
             console.debug(`Extracted ${newURL} from ${url}`)
         } else {
             console.debug(`Unable to extract URL from ${url}`)
@@ -25,7 +29,7 @@ function replaceAllLinks() {
         return newURL;
     }
 
-    const linkNodes = document.querySelectorAll(".autolinker_link");
+    const linkNodes = document.querySelectorAll('.autolinker_link');
     linkNodes.forEach((node) => {
         const href = node.getAttribute('href');
         hrefDecoded = decodeReferralURL(href);
@@ -36,12 +40,14 @@ function replaceAllLinks() {
 }
 
 chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
-    if (changeInfo.status == 'complete' && tab.url.includes('forums.redflagdeals.com')) {
-        chrome.scripting.executeScript({
-            target: { tabId },
-            function: replaceAllLinks
-          });
-    }
+    chrome.storage.sync.get('state', function (data) {
+        if (data.state && changeInfo.status == 'complete' && tab.url.includes('redflagdeals.com')) {
+            chrome.scripting.executeScript({
+                target: { tabId },
+                function: replaceAllLinks
+              });
+        }
+    });
 })
 
 
